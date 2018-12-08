@@ -12,12 +12,16 @@ public class InventoryManager : MonoBehaviour {
 
     int currentWeapon;
 
+    Animator weaponImageAnim;
+
 	void Start () {
         weaponAvailable = new bool[weapons.Length];
         for (int i = 0; i < weapons.Length; i++) weaponAvailable[i] = false;
         currentWeapon = 0;
         weaponAvailable[currentWeapon] = true;
-    //    for (int i = 0; i < weapons.Length; i++) weaponAvailable[i] = true;
+        //    for (int i = 0; i < weapons.Length; i++) weaponAvailable[i] = true;
+
+        weaponImageAnim = weaponImage.GetComponent<Animator>();
 
         deactivateWeapons();
 
@@ -54,6 +58,7 @@ public class InventoryManager : MonoBehaviour {
         deactivateWeapons();
         weapons[whichWeapon].SetActive(true);
         weapons[whichWeapon].GetComponentInChildren<FireBullet>().initializeWeapon();
+        weaponImageAnim.SetTrigger("WeaponSwitch");
     }
 
     void deactivateWeapons()

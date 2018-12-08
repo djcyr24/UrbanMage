@@ -71,7 +71,9 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\EndCollisionBoxController.cs" />
     <Compile Include="Assets\Models\BarrelPickups\Barrel\Scripts\BarrelColorManager.cs" />
+    <Compile Include="Assets\RestartGame.cs" />
     <Compile Include="Assets\Script\AmmoPickUpController.cs" />
     <Compile Include="Assets\Script\CameraFollow.cs" />
     <Compile Include="Assets\Script\Cleaner.cs" />
@@ -99,16 +101,16 @@
     <None Include="Assets\Models\Priest Pack\readMe.txt" />
     <None Include="Assets\Models\Crates And Barrels Pack Volume 1 - Free Version\manual.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Users/Jim/Documents/3D.5 Platformer Shooterish/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/UnityProjects/UrbanMage/3D.5 Platformer Shooterish/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Users/Jim/Documents/3D.5 Platformer Shooterish/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/UrbanMage/3D.5 Platformer Shooterish/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Users/Jim/Documents/3D.5 Platformer Shooterish/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/UrbanMage/3D.5 Platformer Shooterish/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Users/Jim/Documents/3D.5 Platformer Shooterish/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UnityProjects/UrbanMage/3D.5 Platformer Shooterish/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

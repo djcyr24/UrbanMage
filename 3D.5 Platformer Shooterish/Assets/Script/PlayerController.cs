@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour {
         {
             grounded = false;
             myAnim.SetBool("Grounded", grounded);
+            myRB.velocity = new Vector3(myRB.velocity.x, 0, 0);
             myRB.AddForce(new Vector3(0, jumpHeight, 0));
         }
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, groundLayer);
@@ -44,6 +45,9 @@ public class PlayerController : MonoBehaviour {
         else grounded = false;
 
         myAnim.SetBool("Grounded", grounded);
+
+        //jumping 
+        myAnim.SetFloat("verticalSpeed", myRB.velocity.y);
 
         float move = Input.GetAxis("Horizontal");
         myAnim.SetFloat("Speed", Mathf.Abs(move));
